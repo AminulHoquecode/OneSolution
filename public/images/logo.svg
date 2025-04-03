@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <!-- Triangle Base -->
-    <path d="M256 50 L50 450 L462 450 Z" fill="#00B4D8"/>
-    
-    <!-- Gear in center -->
-    <circle cx="256" cy="256" r="60" fill="#FF6B6B"/>
-    <text x="256" y="276" text-anchor="middle" fill="white" font-size="40" font-weight="bold">1</text>
-    
-    <!-- Floating icons -->
-    <g id="floating-icons">
-      <!-- Add circular icons around the triangle -->
-      <circle cx="150" cy="200" r="25" fill="#4361EE"/>
-      <circle cx="362" cy="200" r="25" fill="#4CC9F0"/>
-      <circle cx="256" cy="150" r="25" fill="#7209B7"/>
-      <circle cx="200" cy="300" r="25" fill="#F72585"/>
-      <circle cx="312" cy="300" r="25" fill="#4895EF"/>
-      <!-- Add more circles as needed -->
-    </g>
-    
-    <!-- Decorative elements -->
-    <path d="M256 50 L276 90 L236 90 Z" fill="#480CA8"/>
-    
-    <!-- Cloud elements -->
-    <path d="M150 380 Q180 350 210 380" stroke="#4CC9F0" fill="none" stroke-width="8"/>
-    <path d="M300 380 Q330 350 360 380" stroke="#4CC9F0" fill="none" stroke-width="8"/>
+  <!-- Main circular frame -->
+  <circle cx="256" cy="256" r="230" stroke="#4CC9F0" stroke-width="12" fill="none"/>
+  
+  <!-- Central hexagon representing unified solutions -->
+  <path d="M256 146 L346 201 L346 311 L256 366 L166 311 L166 201 Z" fill="#4361EE" fill-opacity="0.9"/>
+  
+  <!-- Inner connecting lines -->
+  <g stroke="#7209B7" stroke-width="8">
+    <line x1="256" y1="146" x2="256" y2="366" stroke-opacity="0.6"/>
+    <line x1="166" y1="201" x2="346" y2="201" stroke-opacity="0.6"/>
+    <line x1="166" y1="311" x2="346" y2="311" stroke-opacity="0.6"/>
   </g>
-</svg> 
+  
+  <!-- Orbiting elements -->
+  <g>
+    <circle cx="256" cy="116" r="20" fill="#F72585"/>
+    <circle cx="376" cy="256" r="20" fill="#480CA8"/>
+    <circle cx="256" cy="396" r="20" fill="#4895EF"/>
+    <circle cx="136" cy="256" r="20" fill="#4CC9F0"/>
+  </g>
+  
+  <!-- Connecting curves -->
+  <path d="M136 256 Q256 176 376 256" stroke="#F72585" stroke-width="4" fill="none" stroke-opacity="0.5"/>
+  <path d="M256 116 Q336 256 256 396" stroke="#480CA8" stroke-width="4" fill="none" stroke-opacity="0.5"/>
+  
+  <!-- ONE text -->
+  <text x="256" y="270" text-anchor="middle" fill="white" font-family="Arial" font-size="48" font-weight="bold">ONE</text>
+</svg>
