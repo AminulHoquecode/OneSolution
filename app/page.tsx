@@ -1,4 +1,4 @@
-import { DocumentIcon, PhotoIcon, ArrowsPointingInIcon, ArrowsRightLeftIcon } from "@heroicons/react/24/outline"
+import { PhotoIcon, ArrowsPointingInIcon, ArrowsRightLeftIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import Image from "next/image"
 import AdBanner from "./components/AdBanner"

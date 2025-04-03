@@ -1,11 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
   images: {
-    unoptimized: true,
+    domains: ['localhost'],
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  trailingSlash: true,
+  typescript: {
+    ignoreBuildErrors: false,
+  },
 };
 
 export default nextConfig;
